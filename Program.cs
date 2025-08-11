@@ -1,8 +1,12 @@
-﻿var internationalPizzaDay25 = new DateTime(2025, 2, 9);
+﻿var rectangle1 = new Rectangle();
 
-System.Console.WriteLine($"{internationalPizzaDay25.Year}");
-System.Console.WriteLine($"{internationalPizzaDay25.Month}");
-System.Console.WriteLine($"{internationalPizzaDay25.Day}");
-System.Console.WriteLine($"{internationalPizzaDay25.DayOfWeek}");
+System.Console.WriteLine($"{rectangle1.width}");
+System.Console.WriteLine($"{rectangle1.height}");
 
 Console.ReadKey();
+
+class Rectangle
+{
+  int width;
+  int height;
+}
