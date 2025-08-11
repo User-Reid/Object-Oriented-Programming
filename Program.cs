@@ -3,5 +3,6 @@
 System.Console.WriteLine($"{internationalPizzaDay25.Year}");
 System.Console.WriteLine($"{internationalPizzaDay25.Month}");
 System.Console.WriteLine($"{internationalPizzaDay25.Day}");
+System.Console.WriteLine($"{internationalPizzaDay25.DayOfWeek}");
 
 Console.ReadKey();
