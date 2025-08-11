@@ -7,6 +7,11 @@ Console.ReadKey();
 
 class Rectangle
 {
-  int width;
-  int height;
+  public int width;
+  public int height;
+
+  void DummyMethod()
+  {
+    System.Console.WriteLine($"{width + height}");
+  }
 }
