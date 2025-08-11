@@ -1,0 +1,15 @@
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\bin\Debug\net9.0\Object Oriented Programming.exe
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\bin\Debug\net9.0\Object Oriented Programming.deps.json
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\bin\Debug\net9.0\Object Oriented Programming.runtimeconfig.json
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\bin\Debug\net9.0\Object Oriented Programming.dll
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\bin\Debug\net9.0\Object Oriented Programming.pdb
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.AssemblyInfoInputs.cache
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.AssemblyInfo.cs
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.csproj.CoreCompileInputs.cache
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.sourcelink.json
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.dll
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\refint\Object Oriented Programming.dll
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.pdb
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\Object Oriented Programming.genruntimeconfig.cache
+C:\Users\reidh\Desktop\Coding\Repositories\C#\Object Oriented Programming\Object-Oriented-Programming\obj\Debug\net9.0\ref\Object Oriented Programming.dll
