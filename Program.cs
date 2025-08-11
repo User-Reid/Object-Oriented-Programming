@@ -1,17 +1,41 @@
-﻿var rectangle1 = new Rectangle();
-
-System.Console.WriteLine($"{rectangle1.width}");
-System.Console.WriteLine($"{rectangle1.height}");
+﻿
 
 Console.ReadKey();
 
-class Rectangle
+public class HotelBooking
 {
-  public int width;
-  public int height;
+  public string GuestName;
+  public DateTime StartDate;
+  public DateTime EndDate;
 
-  void DummyMethod()
+  public HotelBooking(string guestName, DateTime startDate, int lengthOfStayInDays)
   {
-    System.Console.WriteLine($"{width + height}");
+    GuestName = guestName;
+    StartDate = startDate;
+    EndDate = StartDate.AddDays(lengthOfStayInDays);
   }
 }
+
+// var rectangle1 = new Rectangle(5,2);
+// var rectangle2 = new Rectangle(4,9);
+
+// System.Console.WriteLine($"{rectangle1.Width}");
+// System.Console.WriteLine($"{rectangle1.Height}");
+// System.Console.WriteLine($"{rectangle2.Width}");
+// System.Console.WriteLine($"{rectangle2.Height}");
+
+
+
+// Console.ReadKey();
+
+// class Rectangle
+// {
+//   public int Width;
+//   public int Height;
+
+//   public Rectangle(int width, int height)
+//   {
+//     Width = width;
+//     Height = height;
+//   }
+// }
