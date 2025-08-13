@@ -1,27 +1,31 @@
-﻿var pyramid = new Triangle(10, 30);
+﻿
 
-System.Console.WriteLine($"{pyramid.CaclculateArea()}");
-System.Console.WriteLine($"{pyramid.AsString()}");
+Console.ReadKey();
 
-class Triangle
+class MedicalAppointment
 {
-  int @base;
-  int height;
+  string _patientName;
+  DateTime _date;
 
-  public Triangle(int Base, int Height)
+  public MedicalAppointment(string patientName, DateTime date)
   {
-    @base = Base;
-    height = Height;
+    _patientName = patientName;
+    _date = date;
   }
 
-  public int CaclculateArea()
+  public void Reschedule(DateTime date)
   {
-    return (@base * height) / 2;
+    _date = date;
   }
 
-  public string AsString()
+  public void OverideMonthAndDay(int month, int day)
   {
-    return $"Base is {@base}, height is {height}";
+    _date = new DateTime(_date.Year, month, day);
+  }
+
+  public void MoveByMonthsAndDays(int monthsToAdd, int daysToAdd)
+  {
+    _date = new DateTime(_date.Year, date.Month + monthsToAdd, _date.Day + daysToAdd)
   }
 }
 
