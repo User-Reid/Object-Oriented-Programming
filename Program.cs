@@ -1,23 +1,21 @@
 ﻿var rectangle1 = new Rectangle(5,2);
 var rectangle2 = new Rectangle(4, 9);
-var calculator = new ShapesMeasurementsCalculator();
+
 
 System.Console.WriteLine($"{rectangle1.Width}");
 System.Console.WriteLine($"{rectangle1.Height}");
 System.Console.WriteLine($"{rectangle2.Width}");
 System.Console.WriteLine($"{rectangle2.Height}");
 
-System.Console.WriteLine($"the area of rectangle 1 is: {calculator.CalculateArea(rectangle1)}");
-System.Console.WriteLine($"the area of rectangle 2 is: {calculator.CalculateArea(rectangle2)}");
-System.Console.WriteLine($"the area of rectangle 1 is: {calculator.CalculatePermimeter(rectangle1)}");
-System.Console.WriteLine($"the area of rectangle 2 is: {calculator.CalculatePermimeter(rectangle2)}");
+rectangle1.Width = -15;
 
 Console.ReadKey();
 
 class Rectangle
 {
-  public int Width;
-  public int Height;
+  const int NumberOfSides = 4;
+  public readonly int Width;
+  public readonly int Height;
 
   public Rectangle(int width, int height)
   {
@@ -27,7 +25,7 @@ class Rectangle
 
   private int GetLengthOrDefault(int length, string name)
   {
-    int defaultValueIfNonPositive = 1;
+    const int defaultValueIfNonPositive = 1;
     if (length <= 0)
     {
       System.Console.WriteLine($"{name} must be a positive number.");
@@ -36,17 +34,7 @@ class Rectangle
     return length;
   }
 
+  public int CalculatePermimeter(Rectangle rectangle) => 2 * rectangle.Width + 2 * rectangle.Height;
+  public int CalculateArea(Rectangle rectangle) => rectangle.Width * rectangle.Height;
 }
-class ShapesMeasurementsCalculator
-  {
-    public int CalculatePermimeter(Rectangle rectangle)
-    {
-      return 2 * rectangle.Width + 2 * rectangle.Height;
-    }
-
-    public int CalculateArea(Rectangle rectangle)
-    {
-      return rectangle.Width * rectangle.Height;
-    }
-  }
 
