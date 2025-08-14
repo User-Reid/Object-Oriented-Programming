@@ -21,19 +21,15 @@ class MedicalAppointment
     _date = DateTime.Now.AddDays(daysFromNow);
   }
 
-  public void Reschedule(DateTime date)
-  {
-    _date = date;
-  }
+  public void Reschedule(DateTime date) => _date = date;
+ 
 
-  public void OverideMonthAndDay(int month, int day)
-  {
-    _date = new DateTime(_date.Year, month, day);
-  }
+  public void OverideMonthAndDay(int month, int day) => _date = new DateTime(_date.Year, month, day);
+
 
   public void MoveByMonthsAndDays(int monthsToAdd, int daysToAdd)
   {
-    _date = new DateTime(_date.Year, date.Month + monthsToAdd, _date.Day + daysToAdd)
+    _date = new DateTime(_date.Year, _date.Month + monthsToAdd, _date.Day + daysToAdd);
   }
 }
 
