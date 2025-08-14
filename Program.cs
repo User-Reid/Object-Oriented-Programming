@@ -32,21 +32,39 @@ class Dog
     _weight = weight;
   }
 
-  public void Describe() {
+  private string DescribeSize()
+  {
+    string size;
+
+    if (_weight <= 5)
+    {
+      return "tiny";
+    }
+    else if (_weight > 5 && _weight < 30)
+    {
+      return "medium";
+    }
+    return "large";
+  }
+
+  public void Describe()
+  {
 
     string size = "Fatass";
 
-  if(_weight <= 5) {
-    size = "tiny";
-  } else if (_weight > 5 && _weight < 30)
-{
-  size = "medium";
-}
-else if (_weight >= 30)
-{
-  size = "large";
-  }
-        System.Console.WriteLine($"This dog is named {_name}, it's a {_breed}, and it weighs {_weight} kilograms, so it's a {size} dog.");
+    if (_weight <= 5)
+    {
+      size = "tiny";
+    }
+    else if (_weight > 5 && _weight < 30)
+    {
+      size = "medium";
+    }
+    else if (_weight >= 30)
+    {
+      size = "large";
+    }
+    System.Console.WriteLine($"This dog is named {_name}, it's a {_breed}, and it weighs {_weight} kilograms, so it's a {DescribeSize()} dog.");
   }
     }
 
