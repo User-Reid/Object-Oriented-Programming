@@ -6,13 +6,14 @@ Console.ReadLine();
 
 class Order
     {
+
   private DateTime _date;
-  public string Item { get; }
+  public string Item { get; set; }
   public DateTime Date { get { return _date; } set
     {
       if (value.Year == DateTime.Today.Year)
       {
-         _date = value;
+        _date = value;
     }
   } }
         public Order(string item, DateTime date)
