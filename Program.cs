@@ -67,6 +67,7 @@
 
 //   public static string DescribeGenerally() => $"A plane figure with four straight sides and four right angles.";
 // }
+using Object_Oriented_Programming.DataAccess;
 
 var names = new Names();
 var path = new NamesFilePathBuilder().BuildFilePath();
@@ -94,66 +95,3 @@ else
 Console.WriteLine(new NamesFormatter().Format(names.All));
 
 Console.ReadLine();
-
-public class StringsTextualRepository
-{
-  private static readonly string Seperator = Environment.NewLine;
-  public List<string> Read(string filePath)
-  {
-    var fileContents = File.ReadAllText(filePath);
-    return fileContents.Split(Seperator).ToList();
-  }
-
-  public void Write(string filePath, List<string> strings) =>
-      File.WriteAllText(filePath, string.Join(Seperator, strings));
-}
-
-public class NamesValidator
-{
-  public bool IsValid(string name)
-  {
-    return
-        name.Length >= 2 &&
-        name.Length < 25 &&
-        char.IsUpper(name[0]) &&
-        name.All(char.IsLetter);
-  }
-}
-
-class NamesFilePathBuilder
-{
-  public string BuildFilePath()
-  {
-    //we could imagine this is much more complicated
-    //for example that path is provided by the user and validated
-    return "names.txt";
-  }
-}
-
-class NamesFormatter
-{
-    public string Format(List<string> names) =>
-      string.Join(Environment.NewLine, names);
-}
-
-public class Names
-{
-  public List<string> All { get; } = new List<string>();
-  private readonly NamesValidator _namesValidator = new NamesValidator();
-
-  public void AddNames(List<string> stringsFromFile)
-  {
-    foreach (var name in stringsFromFile)
-    {
-      AddName(name);
-    }
-  }
-
-  public void AddName(string name)
-  {
-    if (_namesValidator.IsValid(name))
-    {
-      All.Add(name);
-    }
-  }
-}
