@@ -69,7 +69,7 @@
 // }
 
 var names = new Names();
-var path = names.BuildFilePath();
+var path = new NamesFilePathBuilder().BuildFilePath();
 var stringsTextualRepository = new StringsTextualRepository();
 
 if (File.Exists(path))
@@ -91,7 +91,7 @@ else
   Console.WriteLine("Saving names to the file.");
   stringsTextualRepository.Write(path, names.All);
 }
-Console.WriteLine(names.Format());
+Console.WriteLine(new NamesFormatter().Format(names.All));
 
 Console.ReadLine();
 
@@ -120,6 +120,22 @@ public class NamesValidator
   }
 }
 
+class NamesFilePathBuilder
+{
+  public string BuildFilePath()
+  {
+    //we could imagine this is much more complicated
+    //for example that path is provided by the user and validated
+    return "names.txt";
+  }
+}
+
+class NamesFormatter
+{
+    public string Format(List<string> names) =>
+      string.Join(Environment.NewLine, names);
+}
+
 public class Names
 {
   public List<string> All { get; } = new List<string>();
@@ -140,14 +156,4 @@ public class Names
       All.Add(name);
     }
   }
-
-  public string BuildFilePath()
-  {
-    //we could imagine this is much more complicated
-    //for example that path is provided by the user and validated
-    return "names.txt";
-  }
-
-  public string Format() =>
-      string.Join(Environment.NewLine, All);
 }
