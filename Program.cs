@@ -1,52 +1,11 @@
-﻿// var person = new Person("John", 1981);
-var person = new Person 
-{
-  Name = "John",
-  YearOfBirth = 1981
-};
-
-
-Console.ReadLine();
-
-class Person
-{
-  public string Name { get; set; }
-  public int YearOfBirth { get; init; }
-
-  // public Person(string name, int yearOfBirth)
-  // {
-  //   Name = name;
-  //   YearOfBirth = yearOfBirth;
-  // }
-}
-
-
-// class Order
-//     {
-
-//   private DateTime _date;
-//   public string Item { get; set; }
-//   public DateTime Date { get { return _date; } set
-//     {
-//       if (value.Year == DateTime.Today.Year)
-//       {
-//         _date = value;
-//     }
-//   } }
-//         public Order(string item, DateTime date)
-//   {
-//     Item = item;
-//     Date = date;
-//   }
-//     }
-// var rectangle1 = new Rectangle(5,2);
+﻿// var rectangle1 = new Rectangle(5,2);
 // var rectangle2 = new Rectangle(4, 9);
 
 
 // System.Console.WriteLine($"{rectangle1.Width}");
-// System.Console.WriteLine($"{rectangle1.GetHeight()}");
+// System.Console.WriteLine($"{rectangle1.Height}");
 // System.Console.WriteLine($"{rectangle2.Width}");
-// System.Console.WriteLine($"{rectangle2.GetHeight()}");
+// System.Console.WriteLine($"{rectangle2.Height}");
 
 // Console.ReadKey();
 
@@ -55,19 +14,20 @@ class Person
 //   public Rectangle(int width, int height)
 //   {
 //     Width = GetLengthOrDefault(width, nameof(Width));
-//     _height = GetLengthOrDefault(height, nameof(_height));
+//     _height = GetLengthOrDefault(height, nameof(Height));
 //   }
 
-//   public int Width { get; private set; }
 //   private int _height;
-
-//   public int GetHeight() => _height;
-
-//   public void SetHeight(int value)
+//   public int Width { get; private set; }
+//   public int Height
 //   {
-//     if (value > 0)
+//     get { return _height; }
+//     set
 //     {
-//       _height = value;
+//       if (value > 0)
+//       {
+//         _height = value;
+//       }
 //     }
 //   }
 
@@ -82,7 +42,30 @@ class Person
 //     return length;
 //   }
 
-//   public int CalculatePermimeter(Rectangle rectangle) => 2 * rectangle._width + 2 * rectangle._height;
-//   public int CalculateArea(Rectangle rectangle) => rectangle._width * rectangle._height;
+//   public int CalculatePermimeter(Rectangle rectangle) => 2 * rectangle.Width + 2 * rectangle.Height;
+//   public int CalculateArea(Rectangle rectangle) => rectangle.Width * rectangle.Height;
+//   public string Description => $"A rectangle with width {Width} and height of {Height}";
 // }
 
+var taco = new DailyAccountState(2000, -200);
+System.Console.WriteLine(taco.Report); 
+
+Console.ReadKey();
+
+class DailyAccountState
+{
+  public int InitialState { get; }
+
+  public int SumOfOperations { get; }
+
+  public DailyAccountState(
+      int initialState,
+      int sumOfOperations)
+  {
+    InitialState = initialState;
+    SumOfOperations = sumOfOperations;
+  }
+
+  public int EndOfDayState => InitialState + SumOfOperations;
+  public string Report => $"Day: {DateTime.Today.Day}, month: {DateTime.Today.Month}, year: {DateTime.Today.Year}, initial state: {InitialState}, end of day state: {EndOfDayState}";
+}
