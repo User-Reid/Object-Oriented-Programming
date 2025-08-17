@@ -28,3 +28,18 @@ C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object Oriented Programming\obj\De
 C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object Oriented Programming\obj\Debug\net9.0\Object Oriented Programming.pdb
 C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object Oriented Programming\obj\Debug\net9.0\Object Oriented Programming.genruntimeconfig.cache
 C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object Oriented Programming\obj\Debug\net9.0\ref\Object Oriented Programming.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.AssemblyInfoInputs.cache
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.AssemblyInfo.cs
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.csproj.CoreCompileInputs.cache
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.sourcelink.json
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\refint\Object Oriented Programming.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.pdb
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\bin\Debug\net9.0\Object Oriented Programming.exe
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\bin\Debug\net9.0\Object Oriented Programming.deps.json
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\bin\Debug\net9.0\Object Oriented Programming.runtimeconfig.json
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\bin\Debug\net9.0\Object Oriented Programming.dll
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\bin\Debug\net9.0\Object Oriented Programming.pdb
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\Object Oriented Programming.genruntimeconfig.cache
+C:\Users\aerma\Downloads\UT-Bootcamp\Udemy\C#\Object_Oriented_Programming\obj\Debug\net9.0\ref\Object Oriented Programming.dll
